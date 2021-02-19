@@ -14,4 +14,4 @@ def mention_func(message):
         name = row.name
         score = row.score
         ranking_message += f"{str(int(rank))}位: {name}さん({str(int(score))}回)\n"
-    message.reply(ranking_message)
+    message.reply(ranking_message, in_thread=True)

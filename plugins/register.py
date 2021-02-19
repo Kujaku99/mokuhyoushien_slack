@@ -16,9 +16,9 @@ def mention_func(message):
     users_list = df.index.values.tolist()
     if user in users_list:
         old_name = df.at[user, 'name']
-        message.reply(f"{old_name}さんは既に登録されています。名前を{name}に変更しました。")
+        message.reply(f"{old_name}さんは既に登録されています。名前を{name}に変更しました。", in_thread=True)
         df.at[user, 'name'] = name
     else:
         df.at[user] = [name, np.NaN, 0]
-        message.reply(f"{name}さんを登録しました。")
+        message.reply(f"{name}さんを登録しました。", in_thread=True)
     generator.save()

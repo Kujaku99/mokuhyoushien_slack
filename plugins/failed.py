@@ -12,10 +12,10 @@ def mention_func(message):
         goal = df.at[user, 'goal']
         if type(goal) is str:
             df.at[user, 'goal'] = np.NaN
-            message.reply(f"「{goal}」を達成できませんでした...次は頑張ろう！")
+            message.reply(f"「{goal}」を達成できませんでした...次は頑張ろう！", in_thread=True)
             generator.save()
         else:
-            message.reply(f"目標が設定されていません...それはともかく次は頑張ろう！")
+            message.reply(f"目標が設定されていません...それはともかく次は頑張ろう！", in_thread=True)
 
     else:
-        message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。")
+        message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。", in_thread=True)

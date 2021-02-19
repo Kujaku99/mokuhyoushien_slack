@@ -9,9 +9,9 @@ def mention_func(message):
     df = generator.df
     if user in df.index.values:
         name = df.at[user, 'name']
-        message.reply(f"{name}さんのユーザー登録を解除しました。")
+        message.reply(f"{name}さんのユーザー登録を解除しました。", in_thread=True)
         df.drop(user, axis=0, inplace=True)
         generator.save()
 
     else:
-        message.reply("ユーザー登録されていません。")
+        message.reply("ユーザー登録されていません。", in_thread=True)

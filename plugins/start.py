@@ -13,7 +13,7 @@ def mention_func(message):
 
     if user in df.index.values:
         df.at[user, 'goal'] = goal
-        message.reply(f"目標を「{goal}」に設定しました。頑張って下さい！！")
+        message.reply(f"目標を「{goal}」に設定しました。頑張って下さい！！", in_thread=True)
         generator.save()
     else:
-        message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。")
+        message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。", in_thread=True)
