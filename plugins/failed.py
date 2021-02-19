@@ -18,4 +18,4 @@ def mention_func(message):
             message.reply(f"目標が設定されていません...それはともかく次は頑張ろう！")
 
     else:
-        message.reply("まずは「register ユーザー名」でユーザー登録をして下さい。")
+        message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。")

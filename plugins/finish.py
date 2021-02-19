@@ -18,4 +18,4 @@ def mention_func(message):
             message.reply(f"目標が登録されていません...それはともかくお疲れ様です！！今週の目標達成数は{str(int((df.at[user, 'score'])))}です！")
         generator.save()
     else:
-        message.reply("まずは「register ユーザー名」でユーザー登録をして下さい。")
+        message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。")

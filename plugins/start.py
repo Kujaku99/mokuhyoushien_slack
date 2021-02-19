@@ -16,4 +16,4 @@ def mention_func(message):
         message.reply(f"目標を「{goal}」に設定しました。頑張って下さい！！")
         generator.save()
     else:
-        message.reply("まずは「register ユーザー名」でユーザー登録をして下さい。")
+        message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。")
