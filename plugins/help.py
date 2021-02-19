@@ -3,7 +3,7 @@ from slackbot.bot import listen_to
 
 @listen_to(r'^/help')
 def mention_func(message):
-    message.send(f"\n【取扱説明書】\n"
+    message.reply(f"\n【取扱説明書】\n"
                   f"①「 /register ユーザー名(任意)」でユーザー登録をする\n"
                   f"②「 /start 目標(任意)」で今日or明日の目標を設定\n"
                   f"③目標達成出来たら「 /finish」で報告(目標達成数が+1)\n"
@@ -19,5 +19,5 @@ def mention_func(message):
                   f" /failed ... 目標未達成(達成回数は変化なし)\n"
                   f" /score ... 目標達成回数を確認\n"
                   f" /ranking ... 今週の達成数ランキング\n"
-                  f" /unregister ... ユーザー登録解除"
-                  )
+                  f" /unregister ... ユーザー登録解除",
+                  in_thread=True)
