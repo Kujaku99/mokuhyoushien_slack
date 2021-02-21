@@ -70,6 +70,7 @@ def mention_func(message):
                 generator.save()
             else:
                 message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。", in_thread=True)
+
         #ヘルプを表示
         if row.startswith('/help'):
             message.reply(f"\n【取扱説明書】\n"
@@ -113,6 +114,7 @@ def mention_func(message):
                 message.reply(f"今週の目標達成数は{str(int(df.at[user, 'score']))}です。", in_thread=True)
             else:
                 message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。", in_thread=True)
+
         #登録解除
         if row.startswith('/unregister'):
             generator = DFGenerator()
