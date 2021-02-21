@@ -1,4 +1,4 @@
-from plugins.users_df import DFGenerator
+'''from plugins.users_df import DFGenerator
 from slackbot.bot import listen_to
 
 
@@ -15,3 +15,4 @@ def mention_func(message):
 
     else:
         message.reply("ユーザー登録されていません。", in_thread=True)
+'''

@@ -1,9 +1,10 @@
+'''
 from slackbot.bot import listen_to
 from plugins.users_df import DFGenerator
 import numpy as np
 
 
-@listen_to(r'^/failed')
+@listen_to('/failed')
 def mention_func(message):
     user = message.body['user']
     generator = DFGenerator()
@@ -19,3 +20,4 @@ def mention_func(message):
 
     else:
         message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。", in_thread=True)
+'''

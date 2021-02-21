@@ -1,4 +1,4 @@
-from slackbot.bot import listen_to
+'''from slackbot.bot import listen_to
 from plugins.users_df import DFGenerator
 import numpy as np
 
@@ -19,3 +19,4 @@ def mention_func(message):
         generator.save()
     else:
         message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。", in_thread=True)
+'''

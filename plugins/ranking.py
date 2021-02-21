@@ -1,3 +1,4 @@
+'''
 from slackbot.bot import listen_to
 from plugins.users_df import DFGenerator
 
@@ -15,3 +16,4 @@ def mention_func(message):
         score = row.score
         ranking_message += f"{str(int(rank))}位: {name}さん({str(int(score))}回)\n"
     message.reply(ranking_message, in_thread=True)
+'''

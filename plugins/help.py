@@ -1,4 +1,4 @@
-from slackbot.bot import listen_to
+'''from slackbot.bot import listen_to
 
 
 @listen_to(r'^/help')
@@ -21,3 +21,4 @@ def mention_func(message):
                   f" /ranking ... 今週の達成数ランキング\n"
                   f" /unregister ... ユーザー登録解除",
                   in_thread=True)
+'''

@@ -1,4 +1,4 @@
-from slackbot.bot import listen_to
+'''rom slackbot.bot import listen_to
 from plugins.users_df import DFGenerator
 
 
@@ -11,3 +11,4 @@ def mention_func(message):
         message.reply(f"今週の目標達成数は{str(int(df.at[user, 'score']))}です。", in_thread=True)
     else:
         message.reply("まずは「 /register ユーザー名」でユーザー登録をして下さい。", in_thread=True)
+'''
