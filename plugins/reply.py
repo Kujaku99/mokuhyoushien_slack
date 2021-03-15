@@ -4,7 +4,7 @@ import numpy as np
 
 
 @listen_to('/')
-def mention_func(message):
+def reply(message):
     rows = message.body['text']
     user = message.body['user']
     rows_list = rows.split('\n')
